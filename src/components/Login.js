@@ -50,7 +50,7 @@ const Login = () => {
           updateProfile(user, {
             displayName: name.current.value, photoURL: USER_AVATAR,
           }).then(() => {
-            // Profile updated!
+            // Profile update in our store
             const {uid, email, displayName, photoURL} = auth.currentUser;
             dispatch(
               addUser({

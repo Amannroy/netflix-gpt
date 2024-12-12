@@ -33,7 +33,7 @@ const Header = () => {
       } else {
         // User is signed out
         dispatch(removeUser()); 
-        navigate('/'); // if the user is not logged in then navigate the user to login page
+        navigate('/'); // If the user is not logged in then navigate the user to login page
 
       }
     });
