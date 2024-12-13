@@ -11,7 +11,7 @@ const MainContainer = () => {
     if(movies === null) return;  // Just return, don't render anything(Also known as early return)-> If there is no movie in the store I will not load the main container
 
     const mainMovie = movies[0];  // The movie background will be filled with first movie from nowPlayingMovies
-    console.log(mainMovie);
+    // console.log(mainMovie);
     
     const {original_title, overview, id} = mainMovie;
   return (

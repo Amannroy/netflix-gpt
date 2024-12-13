@@ -13,7 +13,7 @@ const usePopularMovies = () => {
     );
 
     const json = await data.json();
-    console.log(json.results);
+    // console.log(json.results);
     dispatch(addPopularMovies(json.results)); // Pushing my json movies result to my movies store
   };
 
