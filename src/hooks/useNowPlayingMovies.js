@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch();
 
-  const nowPlayingMovies = useSelector(Store => Store.movies.nowPlayingMovies);
+  const nowPlayingMovies = useSelector(store => store.movies.nowPlayingMovies);
 
   // Fetching the data(now playing movies) from TMDB API and pushing it to the store(update the store)
   const getNowPlayingMovies = async () => {
