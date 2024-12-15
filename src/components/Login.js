@@ -1,15 +1,15 @@
 import React, { useRef, useState } from "react";
-import Header from "./Header";
+import Header from "./Layout/Header";
 import { checkValidData } from "../utils/validate";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile
 } from "firebase/auth";
-import { auth } from "../utils/firebase";
+import { auth } from "../utils/api/firebase";
 import { useDispatch } from "react-redux";
-import { addUser } from "../utils/userSlice";
-import { BG_URL, USER_AVATAR } from "../utils/constants";
+import { addUser } from "../utils/redux/slices/userSlice";
+import { BG_URL, USER_AVATAR } from "../utils/constants/constants";
 
 const Login = () => {
   const [isSignInForm, setisSignInForm] = useState(true);
@@ -107,7 +107,7 @@ const Login = () => {
         </div>
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+          className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
         >
           <h1 className="font-bold text-3xl py-4">
             {isSignInForm ? "Sign In" : "Sign Up"}

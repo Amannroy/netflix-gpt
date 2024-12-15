@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import lang from "../utils/languageConstants";
+import lang from "../../utils/constants/languageConstants";
 import { useDispatch, useSelector } from "react-redux";
-import { API_OPTIONS } from "../utils/constants";
-import { addGptMovieResult } from "../utils/gptSlice";
+import { API_OPTIONS } from "../../utils/constants/constants";
+import { addGptMovieResult } from "../../utils/redux/slices/gptSlice";
 
 const GPTSearchBar = () => {
   const langkey = useSelector((store) => store.config?.lang);
