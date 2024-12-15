@@ -39,3 +39,11 @@
 - GPT Saerch Page
 - GPT Search Bar
 - Multi-Language Feature in our App
+- Fetched Movies from TMDB
+- GPTSlice added over there
+- Reused Movie List Component to make movie suggestion container
+- Memoization
+- Added .env file
+- Added .env to .gitignore
+- Made our site responsive
+- Structured the code 
